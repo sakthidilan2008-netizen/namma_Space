@@ -1,0 +1,1 @@
+Place extracted RGB frames in images/. Keep original video separately and preserve capture metadata. Do not commit private indoor footage without consent.

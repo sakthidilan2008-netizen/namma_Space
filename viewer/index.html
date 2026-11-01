@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101820" />
+    <title>Namma Space | Digital Twin Viewer</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div><div class="eyebrow">NAMMA SPACE · ROUND 1</div><h1>Digital Twin Viewer</h1></div>
+        <label class="upload">Load 3D model <input id="modelInput" type="file" accept=".glb" /></label>
+      </header>
+      <main class="workspace">
+        <section class="viewport" id="viewport">
+          <canvas id="scene"></canvas>
+          <div class="empty-state" id="emptyState"><div class="cube">◇</div><h2>Load your reconstructed space</h2><p>Choose a .glb model to explore it in first person.</p><label class="primary-button">Choose model<input id="emptyInput" type="file" accept=".glb" /></label></div>
+          <div class="crosshair">+</div>
+          <div class="hud"><span id="modelStatus">No model loaded</span><span>WASD move · Mouse look · ESC release</span></div>
+        </section>
+        <aside class="sidebar">
+          <div class="panel"><div class="eyebrow">NAVIGATION</div><h3>Walkthrough</h3><p>Click inside the model to lock the mouse and look around. Use W A S D to move.</p><button id="enterButton" disabled>Enter walkthrough</button><button class="secondary" id="resetButton">Reset view</button></div>
+          <div class="panel"><div class="eyebrow">MODEL DETAILS</div><h3 id="modelName">Waiting for model</h3><dl><dt>Format</dt><dd id="modelFormat">—</dd><dt>Objects</dt><dd id="objectCount">—</dd><dt>Triangles</dt><dd id="triangleCount">—</dd></dl></div>
+          <div class="notice"><strong>Round 1 scope</strong><p>This viewer handles the web walkthrough. It does not perform 3D reconstruction; the reconstruction pipeline must produce the GLB/GLTF input.</p></div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

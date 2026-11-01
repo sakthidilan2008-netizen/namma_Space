@@ -1,0 +1,15 @@
+{
+  "scene_id": "home_floor1",
+  "device": "iPhone Pro (exact model/year to fill)",
+  "capture_app": "TO_BE_CONFIRMED_WITH_ORGANIZERS",
+  "app_version": "unknown",
+  "capture_mode": "RGB video; optional synchronized depth export",
+  "video_fps": "record actual setting",
+  "extracted_frame_rate_fps": 2,
+  "floor": "ground",
+  "known_dimensions_m": {
+    "hallway_width": null,
+    "room_length": null
+  },
+  "notes": "Record lighting, people, reflective surfaces, and any capture interruptions."
+}

@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+.env
+.DS_Store
+outputs/*
+!outputs/.gitkeep
